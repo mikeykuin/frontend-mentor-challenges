@@ -13,6 +13,9 @@
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
     margin: 0;
+
+    /* For debugging */
+    /* border: 1px solid red; */
 }
 
 body {
@@ -26,9 +29,6 @@ body {
     padding: 12px;
     display: block;
     margin: auto;
-    
-    /* For debugging */
-    /* border: 1px solid red; */
 }
 
 .container {
@@ -41,11 +41,6 @@ body {
     /* Sets the min-height of an element */
     /* in simple words, centers the element vertically */
     min-height: 100vh;
-
-
-    /* For debugging */
-    /* border: 1px solid red; */
-    
 }
 
 .card-wrapper {
@@ -56,19 +51,12 @@ body {
     box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
     -webkit-box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
     -moz-box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
-
-
-    /* For debugging */
-    /* border: 1.5px solid rgb(212, 18, 230); */
 }
 
 .content-heading {
     text-align: center;
     font-weight: 700;
     margin: 18px 8px;
-
-    /* For debugging */
-    /* border: 1px solid red; */
 }
 
 .content-description {
@@ -78,26 +66,16 @@ body {
     font-weight: 400;
     margin: 20px 8px;
 
-    /* For debugging */
-    /* border: 1px solid red; */
-}
-
 /* Attribution Styling */
 .attribution {
     font-size: 11px;
     text-align: center;
     /* Using this solved the problem where the attribution was stucked at the bottom of the page */
     margin-top: -150px;
-
-    /* For debugging */
-    /* border: 1px solid red; */
 }
 
   .attribution a {
     color: hsl(228, 45%, 44%);
-
-    /* For debugging */
-    /* border: 1px solid rgb(212, 18, 230); */
   }
 
 /* WIDTH : For mobile friendly display; 375px */
