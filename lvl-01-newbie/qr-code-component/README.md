@@ -1,3 +1,3 @@
 # Frontend Mentor - QR code component
 
-A level - 1 (Newbie) challenge from frontendmentor.io
+QR code component challenge from frontendmentor.io
