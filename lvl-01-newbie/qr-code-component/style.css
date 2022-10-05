@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    --border-radius: 16px;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+#qr-code-img > img{
+    /* using calc for adding additional value to the variable named border-radius */
+    border-radius: calc(var(--border-radius) + 8px);
+    width: 100%;
+    padding: 12px;
+    display: block;
+    margin: auto;
+    
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centering the card horizontally */
+    margin: 0 auto;
+    width: 280px;
+    /* Sets the min-height of an element */
+    /* in simple words, centers the element vertically */
+    min-height: 100vh;
+
+
+    /* For debugging */
+    /* border: 1px solid red; */
+    
+}
+
+.card-wrapper {
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    /* No need to set custom height, as its now being influenced by the margin of content-description */
+    /* height: 440px; */
+    box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 8px 11px 14px 1px rgba(0,0,0,0.26);
+
+
+    /* For debugging */
+    /* border: 1.5px solid rgb(212, 18, 230); */
+}
+
+.content-heading {
+    text-align: center;
+    font-weight: 700;
+    margin: 18px 8px;
+
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+.content-description {
+    color: var( --grayish-blue);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 8px;
+
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+/* Attribution Styling */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    /* Using this solved the problem where the attribution was stucked at the bottom of the page */
+    margin-top: -150px;
+
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+
+    /* For debugging */
+    /* border: 1px solid rgb(212, 18, 230); */
+  }
+
+/* WIDTH : For mobile friendly display; 375px */
+@media only screen and (max-width:375px)
+{
+    .card-wrapper {
+        border-radius: var(--card-border-radius);
+        background-color: var(--white);
+    }
+
+    .card-wrapper {
+        border-radius: var(--border-radius);
+        background-color: var(--white);
+    }
+
+    .attribution {
+        /* Using this solved the problem where the attribution was stucked at the bottom of the page */
+        margin-top: -60px;
+    }
+}
+
+/* HEIGHT : For mobile friendly display; 375px */
+@media only screen and (max-height:375px)
+{
+    .container {
+        margin: 50px auto;
+    }
+
+    .card-wrapper {
+        border-radius: var(--card-border-radius);
+        background-color: var(--white);
+    }
+
+    .card-wrapper {
+        border-radius: var(--border-radius);
+        background-color: var(--white);
+    }
+
+    .attribution {
+        /* Using this solved the problem where the attribution was stucked at the bottom of the page */
+        margin-top: -6px;
+    }
+}
+
